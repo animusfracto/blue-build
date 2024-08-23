@@ -11,10 +11,17 @@ modules:
       - usr: /usr
 
   - type: rpm-ostree
+    repos:
+      - https://download.docker.com/linux/fedora/docker-ce.repo
     install:
       - zsh
       - gcc-c++
       - openssl-devel
+      - docker-ce
+      - docker-ce-cli
+      - containerd.io
+      - docker-buildx-plugin
+      - docker-compose-plugin
 
   - type: default-flatpaks
     notify: true
@@ -24,3 +31,7 @@ modules:
 
   - type: signing
 
+  - type: systemd
+    system:
+      enabled:
+        - docker.service
