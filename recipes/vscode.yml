@@ -1,0 +1,13 @@
+modules:
+  - type: script
+    snippets:
+      - rpm --import https://packages.microsoft.com/keys/microsoft.asc
+
+  - type: files
+    files:
+      - source: etc/yum.repos.d/
+        destination: /etc/yum.repos.d/
+
+  - type: rpm-ostree
+    install:
+      - code

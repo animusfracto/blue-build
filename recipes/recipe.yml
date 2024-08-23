@@ -6,10 +6,6 @@ base-image: ghcr.io/ublue-os/bazzite-nvidia
 image-version: latest
 
 modules:
-  - type: files
-    files:
-      - usr: /usr
-
   - type: rpm-ostree
     repos:
       - https://download.docker.com/linux/fedora/docker-ce.repo
@@ -22,6 +18,8 @@ modules:
       - containerd.io
       - docker-buildx-plugin
       - docker-compose-plugin
+
+  - from-file: vscode.yml
 
   - type: default-flatpaks
     notify: true
