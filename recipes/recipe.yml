@@ -14,7 +14,7 @@ modules:
     install:
       - zsh
       - gcc-c++
-      - libssl-dev
+      - openssl-devel
 
   - type: default-flatpaks
     notify: true
