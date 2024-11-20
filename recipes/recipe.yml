@@ -19,7 +19,7 @@ modules:
       - docker-buildx-plugin
       - docker-compose-plugin
       - java-17-openjdk
-      - webkit2gtk4.0
+      - snapd
 
   - from-file: vscode.yml
 
