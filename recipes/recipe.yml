@@ -19,7 +19,6 @@ modules:
       - docker-buildx-plugin
       - docker-compose-plugin
       - java-17-openjdk
-      - snapd
       - plasma-workspace-x11
 
   - from-file: vscode.yml
