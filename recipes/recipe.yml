@@ -22,13 +22,13 @@ modules:
       - plasma-workspace-x11
 
   - from-file: vscode.yml
-  - from-file: snap.yml
 
   - type: default-flatpaks
     notify: true
     system:
       install:
         - net.pcsx2.PCSX2
+        - com.usebottles.bottles
 
   - type: signing
 

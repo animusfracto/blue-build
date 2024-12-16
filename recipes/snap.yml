@@ -1,8 +1,0 @@
-modules:
-  - type: script
-    snippets:
-      - ln -s /snap /var/snap
-
-  - type: rpm-ostree
-    install:
-      - snapd
