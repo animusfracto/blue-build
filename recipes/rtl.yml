@@ -1,0 +1,6 @@
+modules:
+  - type: rpm-ostree
+    install:
+      - rtl-sdr
+      - rtl-sdr-devel
+

@@ -22,6 +22,7 @@ modules:
       - plasma-workspace-x11
 
   - from-file: vscode.yml
+  - from-file: rtl.yml
 
   - type: default-flatpaks
     notify: true
