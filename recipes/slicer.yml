@@ -1,0 +1,4 @@
+modules:
+  - type: rpm-ostree
+    install:
+      - webkit2gtk4.0

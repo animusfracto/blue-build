@@ -21,6 +21,7 @@ modules:
       - java-17-openjdk
       - plasma-workspace-x11
 
+  - from-file: slicer.yml
   - from-file: vscode.yml
   - from-file: rtl.yml
 
