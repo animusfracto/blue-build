@@ -19,9 +19,8 @@ modules:
       - docker-buildx-plugin
       - docker-compose-plugin
       - java-17-openjdk
-      - plasma-workspace-x11
 
-  - from-file: slicer.yml
+  #- from-file: slicer.yml # uncomment if I want to use a different slicer and it has deps, time will tell
   - from-file: vscode.yml
   - from-file: rtl.yml
 
