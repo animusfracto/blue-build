@@ -7,20 +7,14 @@ image-version: latest
 
 modules:
   - type: rpm-ostree
-    repos:
-      - https://download.docker.com/linux/fedora/docker-ce.repo
     install:
       - zsh
       - gcc-c++
       - openssl-devel
-      - docker-ce
-      - docker-ce-cli
-      - containerd.io
-      - docker-buildx-plugin
-      - docker-compose-plugin
       - java-17-openjdk
 
   #- from-file: slicer.yml # uncomment if I want to use a different slicer and it has deps, time will tell
+  - from-file: docker.yml
   - from-file: vscode.yml
   - from-file: rtl.yml
 
@@ -32,8 +26,3 @@ modules:
         - com.usebottles.bottles
 
   - type: signing
-
-  - type: systemd
-    system:
-      enabled:
-        - docker.service
