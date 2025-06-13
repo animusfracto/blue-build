@@ -9,9 +9,6 @@ modules:
   - type: rpm-ostree
     install:
       - zsh
-      - gcc-c++
-      - openssl-devel
-      - java-17-openjdk
 
   #- from-file: slicer.yml # uncomment if I want to use a different slicer and it has deps, time will tell
   - from-file: docker.yml
