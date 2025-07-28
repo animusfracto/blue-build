@@ -16,10 +16,11 @@ modules:
   - from-file: rtl.yml
 
   - type: default-flatpaks
-    notify: true
-    system:
-      install:
-        - net.pcsx2.PCSX2
-        - com.usebottles.bottles
+    configuration:
+      - notify: true
+        scope: system
+        install:
+          - net.pcsx2.PCSX2
+          - com.usebottles.bottles
 
   - type: signing

@@ -8,6 +8,7 @@ modules:
       - source: etc/yum.repos.d/
         destination: /etc/yum.repos.d/
 
+  # todo: replace with flatpack?
   - type: rpm-ostree
     install:
       - code
