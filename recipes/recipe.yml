@@ -16,7 +16,7 @@ modules:
   - from-file: rtl.yml
 
   - type: default-flatpaks
-    configuration:
+    configurations:
       - notify: true
         scope: system
         install:
