@@ -2,8 +2,8 @@
 name: desktop
 description: Image for desktop gaming
 
-base-image: ghcr.io/ublue-os/bazzite-nvidia
-image-version: latest
+base-image: ghcr.io/ublue-os/bazzite
+image-version: stable
 
 modules:
   - type: rpm-ostree
